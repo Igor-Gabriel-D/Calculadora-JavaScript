@@ -1,0 +1,22 @@
+body {
+	text-align: center;
+}
+
+td {
+	border: 1px solid black;
+	width: 32px;
+	height: 32px;
+}
+
+#display {
+	height: 48px;
+
+}
+
+.arit {
+	width: 48px;
+}
+
+#calc {
+	margin: 32px auto;
+}

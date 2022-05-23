@@ -6,6 +6,9 @@ td {
 	border: 1px solid black;
 	width: 32px;
 	height: 32px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	padding: 16px;
 }
 
 #display {
@@ -19,4 +22,12 @@ td {
 
 #calc {
 	margin: 32px auto;
+}
+
+.num {
+	background-color: aquamarine;
+}
+
+.arit {
+	background-color: aqua;
 }

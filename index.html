@@ -13,33 +13,31 @@
 
         <table id="calc">
             <tr>
-                <td id="display" colspan="4">
-                    
-                </td>
+                <td id="display" colspan="4"></td>
             </tr>
             <tr>
-                <td class="num" onclick="calc(7)">7</td>
-                <td class="num" onclick="calc(8)">8</td>
-                <td class="num" onclick="calc(9)">9</td>
-                <td class="arit" onclick="">+</td>
+                <td class="num" onclick="inputNum(7)">7</td>
+                <td class="num" onclick="inputNum(8)">8</td>
+                <td class="num" onclick="inputNum(9)">9</td>
+                <td class="ope" onclick="inputOpe('som')">+</td>
             </tr>
             <tr>
-                <td class="num" onclick="calc(4)">4</td>
-                <td class="num" onclick="calc(5)">5</td>
-                <td class="num" onclick="calc(6)">6</td>
-                <td class="arit" onclick="">-</td>
+                <td class="num" onclick="inputNum(4)">4</td>
+                <td class="num" onclick="inputNum(5)">5</td>
+                <td class="num" onclick="inputNum(6)">6</td>
+                <td class="ope" onclick="inputOpe('sub')">-</td>
             </tr>
             <tr>
-                <td class="num" onclick="calc(1)">1</td>
-                <td class="num" onclick="calc(2)">2</td>
-                <td class="num" onclick="calc(3)">3</td>
-                <td class="arit" onclick="">*</td>
+                <td class="num" onclick="inputNum(1)">1</td>
+                <td class="num" onclick="inputNum(2)">2</td>
+                <td class="num" onclick="inputNum(3)">3</td>
+                <td class="ope" onclick="inputOpe('mult')">*</td>
             </tr>
             <tr>
-                <td onclick="c(0)">C</td>
-                <td class="num" onclick="calc(0)">0</td>
-                <td onclick="">=</td>
-                <td class="arit" onclick="">/</td>
+                <td class="result" onclick="c()">C</td>
+                <td class="num" onclick="inputNum(0)">0</td>
+                <td class="result" onclick="resultado()">=</td>
+                <td class="ope" onclick="inputOpe('div')">/</td>
             </tr>
         </table>
 

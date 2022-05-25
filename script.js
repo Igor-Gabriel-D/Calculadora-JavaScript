@@ -1,14 +1,47 @@
-let num = 0;
+let expressaoNum = ""
 let display = document.querySelector('#display');
 
-function calc(n) {
-	num = num*10 + n;
-	display.innerHTML = num;
-	console.log(num)
+function inputNum(n) {
+	expressaoNum += n.toString();
+	display.innerHTML = expressaoNum;
+	
 }
 
+function inputOpe(o) {
+	switch(o) {
+		case 'som':
+			expressaoNum += ' + ';
+			display.innerHTML = expressaoNum;
+			break 
+
+		case 'sub':
+			expressaoNum += ' - ';
+			display.innerHTML = expressaoNum;
+			break 
+
+		case 'mult':
+			expressaoNum += ' * ';
+			display.innerHTML = expressaoNum;
+			break 
+
+		case 'div':
+			expressaoNum += ' / ';
+			display.innerHTML = expressaoNum;
+			break 
+	}
+}
+
+function resultado() {
+	expressaoNum = eval(expressaoNum);
+	display.innerHTML = expressaoNum;
+	expressaoNum = ""
+
+}
+
+
+
 function c(n) {
-	num = n;
+	expressaoNum = "";
 	display.innerHTML = "";
 }
 

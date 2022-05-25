@@ -2,8 +2,18 @@ body {
 	text-align: center;
 }
 
-td {
+table {
 	border: 1px solid black;
+	border-radius: 10px;
+	padding: 5px;
+
+}
+
+
+
+td {
+	border: 1px solid white;
+	border-radius: 10px;
 	width: 32px;
 	height: 32px;
 	font-family: Arial, Helvetica, sans-serif;
@@ -13,11 +23,14 @@ td {
 
 #display {
 	height: 48px;
+	text-align: right;
+	background-color: #dce0e6;
+
 
 }
 
-.arit {
-	width: 48px;
+.ope {
+	background-color: #601848;
 }
 
 #calc {
@@ -25,9 +38,10 @@ td {
 }
 
 .num {
-	background-color: aquamarine;
+	background-color: #c04848;
 }
 
-.arit {
-	background-color: aqua;
+.result {
+	background-color: #dce0e6;
 }
+

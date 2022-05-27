@@ -8,27 +8,9 @@ function inputNum(n) {
 }
 
 function inputOpe(o) {
-	switch(o) {
-		case 'som':
-			expressaoNum += ' + ';
-			display.innerHTML = expressaoNum;
-			break 
+	expressaoNum += o;
+	display.innerHTML = expressaoNum;
 
-		case 'sub':
-			expressaoNum += ' - ';
-			display.innerHTML = expressaoNum;
-			break 
-
-		case 'mult':
-			expressaoNum += ' * ';
-			display.innerHTML = expressaoNum;
-			break 
-
-		case 'div':
-			expressaoNum += ' / ';
-			display.innerHTML = expressaoNum;
-			break 
-	}
 }
 
 function resultado() {
